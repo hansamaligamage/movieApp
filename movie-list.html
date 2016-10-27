@@ -1,0 +1,19 @@
+﻿
+<div class="container" style="width:100%; margin-left:15px">
+    <div class="row">
+        <!--<div class="col-md-10">
+        </div>-->
+        <div class="col-md-offset-10">
+            <input type="button" value="Add Movie" ui-sref="movieForm" class="btn btn-primary" />
+        </div>
+    </div>
+    <div class="row col-md-offset-4">
+        <h1> My Movies </h1>
+    </div>
+
+    <div class="row" ng-controller="MovieController as movie">
+        <div movie-list m="m" ng-repeat="m in movie.movieList | orderBy:'-year'" style="border-style:groove; margin:20px; padding:10px">
+        </div>
+    </div>
+</div>
+

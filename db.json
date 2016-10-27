@@ -1,0 +1,228 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Avengers",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "director": "Joss Whedon",
+      "year": 2015,
+      "rating": 8,
+      "language": "English"
+    },
+    {
+      "id": 2,
+      "title": "X-Men",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "director": "Bryan Singer",
+      "year": 2016,
+      "rating": 8,
+      "language": "English"
+    },
+    {
+      "id": 3,
+      "title": "Captain America: Civil War",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "director": "Joe Russo",
+      "year": 2016,
+      "rating": 8,
+      "language": "English"
+    },
+    {
+      "id": 4,
+      "title": "The Jungle Book",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+      "director": "Jon Favreau",
+      "year": 2016,
+      "rating": 7,
+      "language": "English"
+    },
+    {
+      "title": "Inferno",
+      "description": "Famous symbologist Robert Langdon (Tom Hanks) follows a trail of clues tied to Dante, the great medieval poet. When Langdon wakes up in an Italian hospital with amnesia, he teams up with Sienna Brooks (Felicity Jones), a doctor he hopes will help him recover his memories. Together, they race across Europe and against the clock to stop a madman (Ben Foster) from unleashing a virus that could wipe out half of the world's population.",
+      "director": "Ron Howard",
+      "year": 2016,
+      "rating": 4,
+      "language": "English",
+      "characters": [],
+      "id": 5
+    },
+    {
+      "title": "The Conjuring 2",
+      "description": "In 1977, paranormal investigators Ed (Patrick Wilson) and Lorraine Warren come out of a self-imposed sabbatical to travel to Enfield, a borough in north London. There, they meet Peggy Hodgson, an overwhelmed single mother of four who tells the couple that something evil is in her home. Ed and Lorraine believe her story when the youngest daughter starts to show signs of demonic possession. As the Warrens try to help the besieged girl, they become the next targets of the malicious spirit.",
+      "director": "James Wan",
+      "year": 2016,
+      "rating": 9,
+      "language": "English",
+      "characters": [],
+      "id": 6
+    },
+    {
+      "title": "Pete's Dragon",
+      "description": "Mr. Meacham (Robert Redford), a woodcarver, delights local children with stories of a mysterious dragon that lives deep in the woods of the Pacific Northwest. His daughter Grace (Bryce Dallas Howard) believes these are just tall tales, until she meets Pete (Oakes Fegley), a 10-year-old orphan who says he lives in the woods with a giant, friendly dragon. With help from a young girl named Natalie (Oona Laurence), Grace sets out to investigate if this fantastic claim can be true.",
+      "director": "David Lowery",
+      "year": 2016,
+      "rating": 8,
+      "language": "English",
+      "characters": [],
+      "id": 7
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "character": "Iron Man",
+      "actor": "Robert Downey",
+      "movieId": 1
+    },
+    {
+      "id": 2,
+      "character": "Thor",
+      "actor": "Chris Hemsworth",
+      "movieId": 1
+    },
+    {
+      "id": 3,
+      "character": "Hulk",
+      "actor": "Mark Ruffalo",
+      "movieId": 1
+    },
+    {
+      "id": 4,
+      "character": "Professor Charles Xavier",
+      "actor": "James McAvoy",
+      "movieId": 2
+    },
+    {
+      "id": 5,
+      "character": "Erik Lehnsherr",
+      "actor": "Michael Fassbender",
+      "movieId": 2
+    },
+    {
+      "id": 6,
+      "character": "Raven",
+      "actor": "Jennifer Lawrence",
+      "movieId": 2
+    },
+    {
+      "id": 7,
+      "character": "Beast",
+      "actor": "Nicholas Hoult",
+      "movieId": 2
+    },
+    {
+      "id": 8,
+      "character": "Captain America",
+      "actor": "Chris Evans",
+      "movieId": 3
+    },
+    {
+      "id": 9,
+      "character": "Iron Man",
+      "actor": "Robert Downey",
+      "movieId": 3
+    },
+    {
+      "id": 10,
+      "character": "Black Widow",
+      "actor": "Scarlett Johansson",
+      "movieId": 3
+    },
+    {
+      "id": 11,
+      "character": "Winter Soldier",
+      "actor": "Sebastian Stan",
+      "movieId": 3
+    },
+    {
+      "id": 12,
+      "character": "Falcon",
+      "actor": "Anthony Mackie",
+      "movieId": 3
+    },
+    {
+      "id": 13,
+      "character": "Mowgli",
+      "actor": "Neel Sethi",
+      "movieId": 4
+    },
+    {
+      "character": "Robert Langdon",
+      "actor": "Tom Hanks",
+      "movieId": 5,
+      "id": 14
+    },
+    {
+      "character": "Sienna Brooks",
+      "actor": "Felicity Jones",
+      "movieId": 5,
+      "id": 15
+    },
+    {
+      "character": "Christoph Bouchard",
+      "actor": "Omar Sy",
+      "movieId": 5,
+      "id": 16
+    },
+    {
+      "character": "Harry Sims",
+      "actor": "Irrfan Khan",
+      "movieId": 5,
+      "id": 17
+    },
+    {
+      "character": "Ed Warren",
+      "actor": "Patrick Wilson",
+      "movieId": 6,
+      "id": 18
+    },
+    {
+      "character": "Lorraine Warren",
+      "actor": "Vera Farmiga",
+      "movieId": 6,
+      "id": 19
+    },
+    {
+      "character": "Janet Hodgson",
+      "actor": "Madison Wolfe",
+      "movieId": 6,
+      "id": 20
+    },
+    {
+      "character": "Nora",
+      "actor": "Helen Reddy",
+      "movieId": 7,
+      "id": 21
+    },
+    {
+      "character": "Dr. Terminus",
+      "actor": "Jim Dale",
+      "movieId": 7,
+      "id": 22
+    },
+    {
+      "character": "Lampie",
+      "actor": "Mickey Rooney",
+      "movieId": 7,
+      "id": 23
+    },
+    {
+      "character": "Hoagy",
+      "actor": "Red Buttons",
+      "movieId": 7,
+      "id": 24
+    },
+    {
+      "character": "Lena Gogan",
+      "actor": "Shelley Winters",
+      "movieId": 7,
+      "id": 25
+    },
+    {
+      "character": "Pete",
+      "actor": "Sean Marshall",
+      "movieId": 7,
+      "id": 26
+    }
+  ]
+}

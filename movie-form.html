@@ -1,0 +1,114 @@
+﻿<div class="container" style="width:100%; padding-left:15px; margin:20px">
+    <div style="padding-left:20px">
+        <h2>
+            Create Movie
+        </h2>
+    </div>
+    <div style="margin-left:10px; width:50%" class="row">
+        <form name="movieForm">
+            <div style="padding-left:20px">
+                <h3>
+                    {{movieadd.title}}
+                </h3>
+            </div>
+
+            <div class="form-horizontal" style="padding-left:20px" >
+                <div class="form-group">
+                    <div class="col-md-2"> Title : </div>
+                    <div class="col-md-6"> <input type="text" ng-model="movieadd.title" required class="form-control" /> </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2"> Description : </div>
+                    <div class="col-md-6"> <textarea ng-model="movieadd.description" class="form-control"></textarea> </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2"> Director : </div>
+                    <div class="col-md-6"> <input type="text" ng-model="movieadd.director" class="form-control" /> </div>
+                </div>
+                <div  class="form-group">
+                    <div class="col-md-2"> Release Year : </div>
+                    <div class="col-md-6"> <input type="number" ng-model="movieadd.year" class="form-control" /></div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2"> Rating : </div>
+                    <div class="col-md-6"> <input type="range" ng-model="movieadd.rating" min="1" max="10" class="form-control" /> </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2"> Language : </div>
+                    <div class="col-md-6"> <input type="text" ng-model="movieadd.language" class="form-control" /> </div>
+                </div>
+                <div>
+                    <input type="submit" value="Save" ng-disabled="movieForm.$invalid" ng-click="movieadd.addMovie()" class="btn btn-success" /> 
+                </div>
+            </div>
+            <!--<tr>
+                <td> Director : </td>
+                <td> <input type="text" ng-model="movieadd.director" /> </td>
+            </tr>
+            <tr>
+                <td> Release Year : </td>
+                <td> <input type="number" ng-model="movieadd.year" /></td>
+            </tr>
+            <tr>
+                <td> Rating : </td>
+                <td> <input type="range" ng-model="movieadd.rating" min="1" max="10" /> </td>
+            </tr>
+            <tr>
+                <td> Language : </td>
+                <td> <input type="text" ng-model="movieadd.language" /> </td>
+            </tr>
+            <tr>
+                <td> <input type="submit" value="Save" ng-disabled="movieForm.$invalid" ng-click="movieadd.addMovie()" class="btn btn-success" /> </td>
+            </tr>-->
+            <!--</table>-->
+        </form>
+    </div>
+
+
+
+    <div id="characters" ng-show="movieadd.movieSaved" >
+        <h3 style="padding-left:20px">
+            Characters
+        </h3>
+        <div name="characterForm" style="padding-left:20px; width:50%">
+            <h4>
+                {{movieadd.characters.character}}
+            </h4>
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-md-2"> Character : </div>
+                    <div class="col-md-6"> <input type="text" ng-model="movieadd.characters.character" required class="form-control" /> </div>
+                </div>
+                <div class="form-group">
+                    <div  class="col-md-2"> Actor </div>
+                    <div class="col-md-6"> <input type="text" ng-model="movieadd.characters.actor" required class="form-control" /> </div>
+                </div>
+                <div>
+                    <input type="submit" value="Add" ng-disabled="characterForm.$invalid" ng-click="movieadd.addCharacter()" class="btn btn-success" />
+                </div>
+            </div>
+            <!--Character : <input type="text" ng-model="movieadd.characters.character" required /> <br />
+            Actor : <input type="text" ng-model="movieadd.characters.actor" required /> <br />-->
+
+            <!--{{characterForm.$invalid}}-->
+
+            <!--<input type="submit" value="Add" ng-disabled="characterForm.$invalid" ng-click="movieadd.addCharacter()" />-->
+        </div>
+        <br/>
+        <table class="table" style="width:50%">
+            <thead>
+                <tr>
+                    <th> Character </th>
+                    <th> Actor </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in movieadd.movie.characters | orderBy:'character'">
+                    <td> {{item.character}} </td>
+                    <td> {{item.actor}} </td>
+
+                </tr>
+            </tbody>
+            </table>
+    </div>
+</div>

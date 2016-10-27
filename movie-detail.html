@@ -1,0 +1,22 @@
+﻿<div class="container" style="margin-left : 15px">
+    <div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2> {{moviedetail.movie.title}} </h2>
+            </div>
+            <div class="col-md-6">
+                <span>
+                    <div ng-if="moviedetail.movie.rating" movie-rating rating-value="moviedetail.movie.rating"></div>
+                </span>
+            </div>
+        </div>
+        <p> {{moviedetail.movie.description}} </p>
+        <p> Directed by: {{moviedetail.movie.director}} </p>
+        <p> Release Year: {{moviedetail.movie.year}} </p>
+        <p> Language: {{moviedetail.movie.language}} </p>
+        <h3> Characters </h3>
+        <div ng-repeat="character in moviedetail.movie.characters">
+            {{character.character}} &nbsp; &nbsp; ({{character.actor}})
+        </div>
+    </div>
+</div>
